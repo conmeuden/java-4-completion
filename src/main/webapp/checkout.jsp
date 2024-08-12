@@ -87,10 +87,16 @@ String from = (String) session.getAttribute("from");
 								<input class="form-check-input" type="radio" name="payementMode"
 									value="Thanh toán khi nhận hàng"><label
 									class="form-check-label">Thanh toán khi nhận hàng</label>
+
+							</div>
+							<div>
+								<input class="form-check-input" type="radio" name="payementMode"
+									value="VNPAY"><label class="form-check-label">
+									VNPAY</label>
 							</div>
 							<div class="text-end">
 								<button type="submit"
-									class="btn btn-lg btn-outline-primary mt-3">Đặt hàng</button>
+									class="btn btn-lg btn-outline-primary mt-3">Đặt hàng 2</button>
 							</div>
 						</form>
 					</div>
@@ -113,24 +119,16 @@ String from = (String) session.getAttribute("from");
 						<table class="table table-borderless">
 							<tr>
 								<td>Tổng đơn hàng</td>
-								<td><%=totalProduct%>k</td>
+								<td><%=totalProduct%></td>
 							</tr>
 							<tr>
 								<td>Tổng giá</td>
-								<td><%=totalPrice%>k</td>
-							</tr>
-							<tr>
-								<td>Phí vận chuyển</td>
-								<td>40k</td>
-							</tr>
-							<tr>
-								<td>Phí đóng gói</td>
-								<td>7k</td>
+								<td><%=totalPrice%></td>
 							</tr>
 							<tr>
 								<td><h5>Số tiền phải trả:</h5></td>
 								<td><h5>
-										<%=totalPrice + 47%>k
+										<%=totalPrice%>
 									</h5></td>
 							</tr>
 						</table>
@@ -191,7 +189,7 @@ String from = (String) session.getAttribute("from");
 					<input type="hidden" name="operation" value="changeAddress">
 					<div class="modal-body mx-3">
 
-						
+
 						<div class="mt-2">
 							<label class="form-label fw-bold">Địa chỉ</label> <input
 								class="form-control" type="text" name="user_address"

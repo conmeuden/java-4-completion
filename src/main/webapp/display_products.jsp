@@ -1,7 +1,7 @@
 <%@page import="com.eazydeals.entities.Message"%>
 <%@ page language="java" contentType="text/html; charset=utf-8"
 	pageEncoding="utf-8"%>
-	<%@page errorPage="error_exception.jsp"%>
+<%@page errorPage="error_exception.jsp"%>
 <%@page import="com.eazydeals.dao.UserDao"%>
 <%@page import="com.eazydeals.entities.Product"%>
 <%@page import="com.eazydeals.dao.ProductDao"%>
@@ -53,7 +53,8 @@ ProductDao productDao = new ProductDao(ConnectionProvider.getConnection());
 				<td><%=prod.getProductPriceAfterDiscount()%>k</td>
 				<td><%=prod.getProductQunatity()%></td>
 				<td><%=prod.getProductDiscount()%>%</td>
-				<td><a href="update_product.jsp?pid=<%=prod.getProductId()%>" role="button" class="btn btn-secondary">Sửa</a>&emsp;<a
+				<td><a href="update_product.jsp?pid=<%=prod.getProductId()%>"
+					role="button" class="btn btn-secondary">Sửa</a>&emsp;<a
 					href="AddOperationServlet?pid=<%=prod.getProductId()%>&operation=deleteProduct"
 					class="btn btn-danger" role="button">Xóa</a></td>
 			</tr>

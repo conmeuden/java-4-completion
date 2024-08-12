@@ -77,7 +77,7 @@ public class UserDao {
 	}
 
 	public List<User> getAllUser() {
-		List<User> list = new ArrayList<User>();
+		List<User> list = new ArrayList<>();
 		try {
 			String query = "select * from user";
 			Statement statement = this.con.createStatement();

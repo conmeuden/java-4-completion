@@ -38,7 +38,8 @@ label {
 									required>
 							</div>
 							<div class="container text-center">
-								<button type="submit" class="btn btn-outline-primary me-3">Gửi mã xác nhận</button>
+								<button type="submit" class="btn btn-outline-primary me-3">Gửi
+									mã xác nhận</button>
 							</div>
 						</form>
 					</div>

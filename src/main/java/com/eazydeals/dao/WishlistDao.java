@@ -5,6 +5,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 import java.util.List;
+
 import com.eazydeals.entities.Wishlist;
 
 public class WishlistDao {
@@ -51,7 +52,7 @@ public class WishlistDao {
 	}
 
 	public List<Wishlist> getListByUserId(int uid) {
-		List<Wishlist> list = new ArrayList<Wishlist>();
+		List<Wishlist> list = new ArrayList<>();
 		try {
 			String query = "select * from wishlist where iduser = ?";
 			PreparedStatement psmt = this.con.prepareStatement(query);

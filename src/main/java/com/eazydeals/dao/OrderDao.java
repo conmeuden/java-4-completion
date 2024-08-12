@@ -49,7 +49,7 @@ public class OrderDao {
 	}
 
 	public List<Order> getAllOrderByUserId(int uid) {
-		List<Order> list = new ArrayList<Order>();
+		List<Order> list = new ArrayList<>();
 		try {
 			String query = "select * from `order` where userId = ?";
 			PreparedStatement psmt = this.con.prepareStatement(query);
@@ -94,7 +94,7 @@ public class OrderDao {
 	}
 
 	public List<Order> getAllOrder() {
-		List<Order> list = new ArrayList<Order>();
+		List<Order> list = new ArrayList<>();
 		try {
 			String query = "select * from `order`";
 			Statement statement = this.con.createStatement();

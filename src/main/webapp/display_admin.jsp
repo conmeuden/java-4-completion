@@ -59,12 +59,13 @@ label {
 									class="form-control" required>
 							</div>
 							<div class="mb-3">
-								<label class="form-label">Số điện thoại</label> <input type="number"
-									name="phone" placeholder="Nhập số điện thoại..."
+								<label class="form-label">Số điện thoại</label> <input
+									type="number" name="phone" placeholder="Nhập số điện thoại..."
 									class="form-control" required>
 							</div>
 							<div class="d-grid gap-2 col-6 mx-auto py-3">
-								<button type="submit" class="btn btn-primary me-3">Đăng kí</button>
+								<button type="submit" class="btn btn-primary me-3">Đăng
+									kí</button>
 							</div>
 						</form>
 					</div>
@@ -88,7 +89,9 @@ label {
 								<td><%=a.getName() %></td>
 								<td><%=a.getEmail() %></td>
 								<td><%=a.getPhone() %></td>
-								<td><a href="AdminServlet?operation=delete&id=<%=a.getId()%>" role="button" class="btn btn-danger">Xóa</a></td>
+								<td><a
+									href="AdminServlet?operation=delete&id=<%=a.getId()%>"
+									role="button" class="btn btn-danger">Xóa</a></td>
 							</tr>
 							<%
 							}

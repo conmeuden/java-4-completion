@@ -1,5 +1,17 @@
 package com.eazydeals.servlets;
 
+import java.io.File;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+
+import com.eazydeals.dao.CategoryDao;
+import com.eazydeals.dao.ProductDao;
+import com.eazydeals.entities.Category;
+import com.eazydeals.entities.Message;
+import com.eazydeals.entities.Product;
+import com.eazydeals.helper.ConnectionProvider;
+
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.MultipartConfig;
 import jakarta.servlet.http.HttpServlet;
@@ -8,21 +20,11 @@ import jakarta.servlet.http.HttpServletResponse;
 import jakarta.servlet.http.HttpSession;
 import jakarta.servlet.http.Part;
 
-import java.io.File;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import com.eazydeals.dao.CategoryDao;
-import com.eazydeals.dao.ProductDao;
-import com.eazydeals.entities.Category;
-import com.eazydeals.entities.Message;
-import com.eazydeals.entities.Product;
-import com.eazydeals.helper.ConnectionProvider;
-
 @MultipartConfig
 public class AddOperationServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 
+	@Override
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 

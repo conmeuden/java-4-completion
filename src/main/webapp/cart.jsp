@@ -56,7 +56,7 @@ if (activeUser == null) {
 	<%
 	} else {
 	%>
-	
+
 	<div class="container mt-5">
 		<%@include file="Components/alert_message.jsp"%>
 		<div class="card px-3 py-3">
@@ -83,19 +83,16 @@ if (activeUser == null) {
 						<td class="text-start"><%=prod.getProductName()%></td>
 						<td><%=prod.getProductPriceAfterDiscount()%>k</td>
 						<td>
-						<%if(c.getQuantity() > 1){ %>
-							<a href="CartOperationServlet?cid=<%=c.getCartId()%>&opt=2"
+							<%if(c.getQuantity() > 1){ %> <a
+							href="CartOperationServlet?cid=<%=c.getCartId()%>&opt=2"
 							role="button" class="btn btn-light" id="qtyDesc"
 							style="border-radius: 50%; font-size: 8px;"> <i
-								class="fa-solid fa-minus fa-2xl"></i></a>
-							<%}else{ %>
-							<a href="CartOperationServlet?cid=<%=c.getCartId()%>&opt=2"
+								class="fa-solid fa-minus fa-2xl"></i></a> <%}else{ %> <a
+							href="CartOperationServlet?cid=<%=c.getCartId()%>&opt=2"
 							role="button" class="btn btn-light disabled" id="qtyDesc"
 							style="border-radius: 50%; font-size: 8px;"> <i
-								class="fa-solid fa-minus fa-2xl"></i></a>
-							<%} %>
-						<div class="qty"><%=c.getQuantity()%></div>
-							<a
+								class="fa-solid fa-minus fa-2xl"></i></a> <%} %>
+							<div class="qty"><%=c.getQuantity()%></div> <a
 							href="CartOperationServlet?cid=<%=c.getCartId()%>&opt=1"
 							role="button" class="btn btn-light"
 							style="border-radius: 50%; font-size: 8px;"> <i
@@ -114,15 +111,18 @@ if (activeUser == null) {
 					%>
 					<tr>
 						<td class="text-end" colspan="8"><h4 class='pe-5'>
-								Tổng: <%=totalPrice%>k</h4></td>
+								Tổng:
+								<%=totalPrice%>k
+							</h4></td>
 					</tr>
 				</tbody>
 			</table>
 			<div class="text-end">
 				<a href="products.jsp" class="btn btn-outline-primary" role="button"
-					aria-disabled="true">Tiếp tục mua sắm</a>&nbsp; 
-					<a href="checkout.jsp" id="checkout-btn"
-					class="btn btn-outline-primary" role="button" aria-disabled="true">Mua hàng</a>
+					aria-disabled="true">Tiếp tục mua sắm</a>&nbsp; <a
+					href="checkout.jsp" id="checkout-btn"
+					class="btn btn-outline-primary" role="button" aria-disabled="true">Mua
+					hàng</a>
 			</div>
 
 		</div>
@@ -140,6 +140,6 @@ if (activeUser == null) {
 			});
 		});
 	</script>
-	
+
 </body>
 </html>

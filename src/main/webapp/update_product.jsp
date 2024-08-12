@@ -20,7 +20,8 @@ if (activeAdmin == null) {
 <title>Cập nhật sản phẩm</title>
 <%@include file="Components/common_css_js.jsp"%>
 <!-- CKEditor 5 CDN -->
-<script src="https://cdn.ckeditor.com/ckeditor5/36.0.1/classic/ckeditor.js"></script>
+<script
+	src="https://cdn.ckeditor.com/ckeditor5/36.0.1/classic/ckeditor.js"></script>
 </head>
 <body>
 	<!--navbar -->
@@ -57,7 +58,8 @@ if (activeAdmin == null) {
 							</div>
 							<div class="mb-2">
 								<label class="form-label"><b>Mô tả</b></label>
-								<textarea class="form-control" name="description" id="editor" rows="3"><%=product.getProductDescription()%></textarea>
+								<textarea class="form-control" name="description" id="editor"
+									rows="3"><%=product.getProductDescription()%></textarea>
 							</div>
 							<div class="row">
 								<div class="col-md-6 mb-2">
@@ -93,7 +95,8 @@ if (activeAdmin == null) {
 								</div>
 							</div>
 							<div class="mb-3">
-								<label class="form-label"><b>Hình ảnh đã tải lên:&nbsp;</b></label><%=product.getProductImages()%>
+								<label class="form-label"><b>Hình ảnh đã tải
+										lên:&nbsp;</b></label><%=product.getProductImages()%>
 								&emsp;<img src="Product_imgs/<%=product.getProductImages()%>"
 									style="width: 80px; height: 80px; width: auto;"> <input
 									type="hidden" name="image"
@@ -101,7 +104,8 @@ if (activeAdmin == null) {
 							</div>
 						</div>
 						<div class="card-footer text-center">
-							<button type="submit" class="btn btn-lg btn-primary me-3">Cập nhật</button>
+							<button type="submit" class="btn btn-lg btn-primary me-3">Cập
+								nhật</button>
 						</div>
 					</form>
 				</div>

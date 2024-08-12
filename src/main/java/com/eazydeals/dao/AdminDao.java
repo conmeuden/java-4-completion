@@ -7,6 +7,7 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
+
 import com.eazydeals.entities.Admin;
 
 public class AdminDao {
@@ -63,7 +64,7 @@ public class AdminDao {
 	}
 
 	public List<Admin> getAllAdmin() {
-		List<Admin> list = new ArrayList<Admin>();
+		List<Admin> list = new ArrayList<>();
 		try {
 
 			String query = "select * from admin";

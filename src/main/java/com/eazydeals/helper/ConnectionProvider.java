@@ -2,6 +2,7 @@ package com.eazydeals.helper;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
+
 import jakarta.servlet.http.HttpServlet;
 
 public class ConnectionProvider extends HttpServlet {

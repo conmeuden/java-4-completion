@@ -36,7 +36,7 @@ public class CartDao {
 	}
 
 	public List<Cart> getCartListByUserId(int uid) {
-		List<Cart> list = new ArrayList<Cart>();
+		List<Cart> list = new ArrayList<>();
 		try {
 			String query = "select * from cart where uid = ?";
 			PreparedStatement psmt = this.con.prepareStatement(query);

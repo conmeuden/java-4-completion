@@ -52,7 +52,7 @@ List<Order> orderList = orderDao.getAllOrderByUserId(u2.getUserId());
 			</tr>
 			<%
 			for (Order order : orderList) {
-				List<OrderedProduct> ordProdList = ordProdDao.getAllOrderedProduct(order.getId());
+				List<OrderedProduct> ordProdList = ordProdDao.getAllOrderedProduEazyDealsct(order.getId());
 				for (OrderedProduct orderProduct : ordProdList) {
 			%>
 			<tr class="text-center">

@@ -38,10 +38,12 @@ label {
 							<div class="mb-3">
 								<label class="form-label">Xác nhận mật khẩu</label> <input
 									type="password" id="confirm_password"
-									placeholder="Nhập lại mật khẩu..." class="form-control" required>
+									placeholder="Nhập lại mật khẩu..." class="form-control"
+									required>
 							</div>
 							<div class="container text-center">
-								<button type="submit" class="btn btn-outline-primary me-3">Cập nhật</button>
+								<button type="submit" class="btn btn-outline-primary me-3">Cập
+									nhật</button>
 							</div>
 						</form>
 					</div>

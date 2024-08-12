@@ -59,23 +59,24 @@ label {
 								</div>
 							</div>
 							<div class="mt-2">
-							<label class="form-label">Mật khẩu</label> <input
-										type="password" name="user_password"
-										placeholder="Nhập mật khẩu" class="form-control" required>
-								
-							</div>  
+								<label class="form-label">Mật khẩu</label> <input
+									type="password" name="user_password"
+									placeholder="Nhập mật khẩu" class="form-control" required>
+
+							</div>
 							<div class="mt-2">
-								
-									<label class="form-label">Địa chỉ</label> <input type="text"
-									name="user_address"
-									placeholder="Nhập địa chỉ..."
+
+								<label class="form-label">Địa chỉ</label> <input type="text"
+									name="user_address" placeholder="Nhập địa chỉ..."
 									class="form-control" required>
-								
+
 							</div>
 
 							<div id="submit-btn" class="container text-center mt-4">
-								<button type="submit" class="btn btn-outline-primary me-3">Đăng kí</button>
-								<button type="reset" class="btn btn-outline-primary">Đặt lại</button>
+								<button type="submit" class="btn btn-outline-primary me-3">Đăng
+									kí</button>
+								<button type="reset" class="btn btn-outline-primary">Đặt
+									lại</button>
 							</div>
 							<div class="mt-3 text-center">
 								<h6>

@@ -9,7 +9,7 @@ if (activeUser == null) {
 	response.sendRedirect("login.jsp");
 	return;  
 }
-%>  
+%>
 
 
 <%@ page language="java" contentType="text/html; charset=utf-8"
@@ -55,7 +55,7 @@ if (activeUser == null) {
 							Xin chào, <br>
 							<h5><%=activeUser.getUserName()%></h5>
 						</div>
-					</div>  
+					</div>
 				</div>
 
 				<div class="card mt-3">
@@ -64,9 +64,11 @@ if (activeUser == null) {
 							class="list-group-item list-group-item-action cus-active list-btn"
 							aria-current="true">Thông tin cá nhân</button>
 						<button type="button" id="wishlist-btn"
-							class="list-group-item list-group-item-action list-btn">Sản phẩm yêu thích</button>
+							class="list-group-item list-group-item-action list-btn">Sản
+							phẩm yêu thích</button>
 						<button type="button" id="order-btn"
-							class="list-group-item list-group-item-action list-btn">Đơn hàng của tôi</button>
+							class="list-group-item list-group-item-action list-btn">Đơn
+							hàng của tôi</button>
 					</div>
 				</div>
 			</div>
@@ -77,13 +79,13 @@ if (activeUser == null) {
 						<%@include file="personalInfo.jsp"%>
 					</div>
 					<div id="wishlist" style="display: none;">
-						<%@include file="wishlist.jsp"%>  
+						<%@include file="wishlist.jsp"%>
 					</div>
 					<div id="order" style="display: none;">
-						<%@include file="order.jsp"%>    
+						<%@include file="order.jsp"%>
 					</div>
 				</div>
-			</div>  
+			</div>
 		</div>
 	</div>
 

@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=utf-8"
-    pageEncoding="utf-8"%>
+	pageEncoding="utf-8"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -32,11 +32,12 @@ label {
 						<form action="ChangePasswordServlet" method="post">
 							<div class="mb-3">
 								<label class="form-label"> Mã OTP</label> <input type="number"
-									name="code" placeholder="Nhập mã OTP đã gửi về email..." class="form-control"
-									required>
+									name="code" placeholder="Nhập mã OTP đã gửi về email..."
+									class="form-control" required>
 							</div>
 							<div class="container text-center">
-								<button type="submit" class="btn btn-outline-primary me-3">Xác thực</button>
+								<button type="submit" class="btn btn-outline-primary me-3">Xác
+									thực</button>
 							</div>
 						</form>
 					</div>

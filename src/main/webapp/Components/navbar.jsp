@@ -42,7 +42,8 @@ List<Category> categoryList = catDao.getAllCategories();
 	%>
 	<div class="container">
 		<a class="navbar-brand" href="admin.jsp"><i
-			class="fa-sharp fa-solid fa-house" style="color: #ffffff;"></i>&ensp;Trang chủ</a>
+			class="fa-sharp fa-solid fa-house" style="color: #ffffff;"></i>&ensp;Trang
+			chủ</a>
 		<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
 			data-bs-target="#navbarSupportedContent"
 			aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -55,15 +56,20 @@ List<Category> categoryList = catDao.getAllCategories();
 				<ul class="navbar-nav justify-content-end">
 					<li class="nav-item"><button type="button"
 							class="btn nav-link" data-bs-toggle="modal"
-							data-bs-target="#add-category"><i class="fa-solid fa-plus fa-xs"></i> Thêm Danh mục</button></li>
+							data-bs-target="#add-category">
+							<i class="fa-solid fa-plus fa-xs"></i> Thêm Danh mục
+						</button></li>
 					<li class="nav-item"><button type="button"
 							class="btn nav-link" data-bs-toggle="modal"
-							data-bs-target="#add-product"><i class="fa-solid fa-plus fa-xs"></i> Thêm Sản phẩm</button></li>
+							data-bs-target="#add-product">
+							<i class="fa-solid fa-plus fa-xs"></i> Thêm Sản phẩm
+						</button></li>
 					<li class="nav-item"><a class="nav-link" aria-current="page"
 						href="admin.jsp"><%=admin.getName()%></a></li>
 					<li class="nav-item"><a class="nav-link" aria-current="page"
 						href="LogoutServlet?user=admin"><i
-							class="fa-solid fa-user-slash fa-sm" style="color: #fafafa;"></i>&nbsp;Đăng xuất</a></li>
+							class="fa-solid fa-user-slash fa-sm" style="color: #fafafa;"></i>&nbsp;Đăng
+							xuất</a></li>
 				</ul>
 			</div>
 		</div>
@@ -92,7 +98,8 @@ List<Category> categoryList = catDao.getAllCategories();
 					class="nav-link dropdown-toggle" href="#" role="button"
 					data-bs-toggle="dropdown" aria-expanded="false"> Danh mục </a>
 					<ul class="dropdown-menu">
-						<li><a class="dropdown-item" href="products.jsp?category=0">Tất cả sản phẩm</a></li>
+						<li><a class="dropdown-item" href="products.jsp?category=0">Tất
+								cả sản phẩm</a></li>
 						<%
 						for (Category c : categoryList) {
 						%>
@@ -106,8 +113,8 @@ List<Category> categoryList = catDao.getAllCategories();
 			<form class="d-flex pe-5" role="search" action="products.jsp"
 				method="get">
 				<input name="search" class="form-control me-2" size="50"
-					type="search" placeholder="Tìm kiếm sản phẩm..." aria-label="Search"
-					style="background-color: white !important;">
+					type="search" placeholder="Tìm kiếm sản phẩm..."
+					aria-label="Search" style="background-color: white !important;">
 				<button class="btn btn-outline-light" type="submit">Tìm</button>
 			</form>
 
@@ -127,7 +134,8 @@ List<Category> categoryList = catDao.getAllCategories();
 					aria-current="page" href="profile.jsp"><%=user.getUserName()%></a></li>
 				<li class="nav-item pe-3"><a class="nav-link"
 					aria-current="page" href="LogoutServlet?user=user"><i
-						class="fa-solid fa-user-slash" style="color: #fafafa;"></i>&nbsp;Đăng xuất</a></li>
+						class="fa-solid fa-user-slash" style="color: #fafafa;"></i>&nbsp;Đăng
+						xuất</a></li>
 			</ul>
 			<%
 			} else {
@@ -135,11 +143,13 @@ List<Category> categoryList = catDao.getAllCategories();
 			<ul class="navbar-nav ml-auto">
 				<li class="nav-item active pe-2"><a class="nav-link"
 					aria-current="page" href="register.jsp"> <i
-						class="fa-solid fa-user-plus" style="color: #ffffff;"></i>&nbsp;Đăng kí
+						class="fa-solid fa-user-plus" style="color: #ffffff;"></i>&nbsp;Đăng
+						kí
 				</a></li>
 				<li class="nav-item pe-2"><a class="nav-link"
 					aria-current="page" href="login.jsp"><i
-						class="fa-solid fa-user-lock" style="color: #fafafa;"></i>&nbsp;Đăng nhập</a></li>
+						class="fa-solid fa-user-lock" style="color: #fafafa;"></i>&nbsp;Đăng
+						nhập</a></li>
 				<li class="nav-item pe-2"><a class="nav-link"
 					aria-current="page" href="adminlogin.jsp">&nbsp;Admin</a></li>
 			</ul>

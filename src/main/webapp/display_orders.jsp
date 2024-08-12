@@ -62,43 +62,44 @@ UserDao userDao = new UserDao(ConnectionProvider.getConnection());
 				</tr>
 				<%
 				for (Order order : orderList) {
-					List<OrderedProduct> ordProdList = ordProdDao.getAllOrderedProduct(order.getId());
+					List<OrderedProduct> ordProdList = ordProdDao.getAllOrderedProduEazyDealsct(order.getId());
 					for (OrderedProduct orderProduct : ordProdList) {
 				%>
 				<form action="UpdateOrderServlet?oid=<%=order.getId()%>"
 					method="post">
-				<tr>
-					<td class="text-center"><img
-						src="Product_imgs\<%=orderProduct.getImage()%>"
-						style="width: 50px; height: 50px; width: auto;"></td>
-					<td><%=order.getOrderId()%></td>
-					<td><%=orderProduct.getName()%><br>Quantity: <%=orderProduct.getQuantity()%><br>Total
-						Price: &#8377;<%=orderProduct.getPrice() * orderProduct.getQuantity()%></td>
-					<td><%=userDao.getUserName(order.getUserId())%><br>Mobile No. <%=userDao.getUserPhone(order.getUserId())%><br><%=userDao.getUserAddress(order.getUserId())%></td>
-					<td><%=order.getDate()%></td>
-					<td><%=order.getPayementType()%></td>
-					<td><%=order.getStatus()%></td>
-					<td><select id="operation" name="status" class="form-select">
-							<option>--Chọn --</option>
-							<option value="Order Confirmed">Đã xác nhận đặt hàng</option>
-							<option value="Shipped">Đẫ vẫn chuyển đến kho giao hàng</option>
-							<option value="Out For Delivery">Đang giao hàng</option>
-							<option value="Delivered">Đã giao hàng</option>
-					</select></td>
-					<td>
-						<%
+					<tr>
+						<td class="text-center"><img
+							src="Product_imgs\<%=orderProduct.getImage()%>"
+							style="width: 50px; height: 50px; width: auto;"></td>
+						<td><%=order.getOrderId()%></td>
+						<td><%=orderProduct.getName()%><br>Quantity: <%=orderProduct.getQuantity()%><br>Total
+							Price: &#8377;<%=orderProduct.getPrice() * orderProduct.getQuantity()%></td>
+						<td><%=userDao.getUserName(order.getUserId())%><br>Mobile
+							No. <%=userDao.getUserPhone(order.getUserId())%><br><%=userDao.getUserAddress(order.getUserId())%></td>
+						<td><%=order.getDate()%></td>
+						<td><%=order.getPayementType()%></td>
+						<td><%=order.getStatus()%></td>
+						<td><select id="operation" name="status" class="form-select">
+								<option>--Chọn --</option>
+								<option value="Order Confirmed">Đã xác nhận đặt hàng</option>
+								<option value="Shipped">Đẫ vẫn chuyển đến kho giao hàng</option>
+								<option value="Out For Delivery">Đang giao hàng</option>
+								<option value="Delivered">Đã giao hàng</option>
+						</select></td>
+						<td>
+							<%
 						if (order.getStatus().equals("Delivered")) {
 						%>
-						<button type="submit" class="btn btn-success disabled">Cập nhật</button>
-						<%
+							<button type="submit" class="btn btn-success disabled">Cập
+								nhật</button> <%
 						} else {
 						%>
-						<button type="submit" class="btn btn-secondary">Cập nhật</button> 
-						<%
+							<button type="submit" class="btn btn-secondary">Cập nhật</button>
+							<%
 						 }
 						 %>
-					</td>
-				</tr>
+						</td>
+					</tr>
 				</form>
 				<%
 				}

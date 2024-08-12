@@ -65,9 +65,9 @@ label {
 
 			</div>
 		</div>
-		
+
 		<div class="row">
-			
+
 			<div class="col-md-12 mt-2">
 				<label class="form-label">Địa chỉ</label> <input type="text"
 					name="address" placeholder="" class="form-control"

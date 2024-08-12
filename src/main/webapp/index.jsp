@@ -130,7 +130,7 @@ List<Product> topDeals = productDao.getDiscountedProducts();
 								<span class="real-price"><%=productList.get(i).getProductPriceAfterDiscount()%>k</span>
 								&ensp;<span class="product-price"><%=productList.get(i).getProductPrice()%>k
 								</span>&ensp;Ưu đãi <span class="product-discount"><%=productList.get(i).getProductDiscount()%>&#37;
-									</span>
+								</span>
 							</div>
 						</div>
 					</div>
@@ -167,7 +167,7 @@ List<Product> topDeals = productDao.getDiscountedProducts();
 								<span class="real-price"><%=topDeals.get(i).getProductPriceAfterDiscount()%>k</span>
 								&ensp;<span class="product-price"><%=topDeals.get(i).getProductPrice()%>k
 								</span>&ensp; Ưu đãi <span class="product-discount"><%=topDeals.get(i).getProductDiscount()%>&#37;
-									</span>
+								</span>
 							</div>
 						</div>
 					</div>
@@ -205,6 +205,6 @@ List<Product> topDeals = productDao.getDiscountedProducts();
 	session.removeAttribute("order");
 	%>
 	<!-- end of message -->
-	
+
 </body>
 </html>

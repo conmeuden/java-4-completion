@@ -6,6 +6,7 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
+
 import com.eazydeals.entities.Product;
 
 public class ProductDao {
@@ -39,7 +40,7 @@ public class ProductDao {
 	}
 
 	public List<Product> getAllProducts() {
-		List<Product> list = new ArrayList<Product>();
+		List<Product> list = new ArrayList<>();
 		try {
 			String query = "select * from product";
 			Statement statement = this.con.createStatement();
@@ -65,7 +66,7 @@ public class ProductDao {
 	}
 
 	public List<Product> getAllLatestProducts() {
-		List<Product> list = new ArrayList<Product>();
+		List<Product> list = new ArrayList<>();
 		try {
 			String query = "select * from product order by pid desc";
 			Statement statement = this.con.createStatement();
@@ -115,7 +116,7 @@ public class ProductDao {
 	}
 
 	public List<Product> getAllProductsByCategoryId(int catId) {
-		List<Product> list = new ArrayList<Product>();
+		List<Product> list = new ArrayList<>();
 		try {
 			String query = "select * from product where cid = ?";
 			PreparedStatement psmt = this.con.prepareStatement(query);
@@ -141,7 +142,7 @@ public class ProductDao {
 	}
 
 	public List<Product> getAllProductsBySearchKey(String search) {
-		List<Product> list = new ArrayList<Product>();
+		List<Product> list = new ArrayList<>();
 		try {
 			String query = "select * from product where lower(name) like ? or lower(description) like ?";
 			PreparedStatement psmt = this.con.prepareStatement(query);
@@ -170,7 +171,7 @@ public class ProductDao {
 	}
 
 	public List<Product> getDiscountedProducts() {
-		List<Product> list = new ArrayList<Product>();
+		List<Product> list = new ArrayList<>();
 		try {
 			String query = "select * from product where discount >= 30 order by discount desc";
 			Statement statement = this.con.createStatement();

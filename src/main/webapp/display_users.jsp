@@ -46,7 +46,9 @@ if (activeAdmin == null) {
 				<td><%=u.getUserGender()%></td>
 				<td><%=userDao.getUserAddress(u.getUserId())%></td>
 				<td><%=u.getDateTime()%></td>
-				<td><a href="UpdateUserServlet?operation=deleteUser&uid=<%=u.getUserId()%>" role="button" class="btn btn-danger">Xóa</a></td>
+				<td><a
+					href="UpdateUserServlet?operation=deleteUser&uid=<%=u.getUserId()%>"
+					role="button" class="btn btn-danger">Xóa</a></td>
 			</tr>
 			<%
 			}

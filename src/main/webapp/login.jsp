@@ -7,12 +7,12 @@
 <title>Login</title>
 <%@include file="Components/common_css_js.jsp"%>
 <style>
-label{
+label {
 	font-weight: bold;
 }
 </style>
 </head>
-<body >  
+<body>
 
 	<!--navbar -->
 	<%@include file="Components/navbar.jsp"%>
@@ -28,33 +28,37 @@ label{
 								class="img-fluid">
 						</div>
 						<h3 class="text-center">Đăng nhập</h3>
-						<%@include file="Components/alert_message.jsp" %>
-						
+						<%@include file="Components/alert_message.jsp"%>
+
 						<!--login-form-->
 						<form id="login-form" action="LoginServlet" method="post">
-							<input type="hidden" name="login" value="user"> 
+							<input type="hidden" name="login" value="user">
 							<div class="mb-3">
-								<label class="form-label">Email</label> <input
-									type="email" name="user_email" placeholder="Nhập email..."
+								<label class="form-label">Email</label> <input type="email"
+									name="user_email" placeholder="Nhập email..."
 									class="form-control" required>
 							</div>
 							<div class="mb-3">
-								<label class="form-label">Mật khẩu</label>
-								<input type="password" name="user_password"
+								<label class="form-label">Mật khẩu</label> <input
+									type="password" name="user_password"
 									placeholder="Nhập mật khẩu..." class="form-control" required>
 							</div>
 							<div id="login-btn" class="container text-center">
-								<button type="submit" class="btn btn-outline-primary me-3"> Đăng nhập </button>
+								<button type="submit" class="btn btn-outline-primary me-3">
+									Đăng nhập</button>
 							</div>
 						</form>
 						<div class="mt-3 text-center">
-							<h6><a href="forgot_password.jsp" style="text-decoration: none">Quên mật khẩu?</a></h6>
+							<h6>
+								<a href="forgot_password.jsp" style="text-decoration: none">Quên
+									mật khẩu?</a>
+							</h6>
 							<h6>
 								Bạn chưa có tài khoản?<a href="register.jsp"
 									style="text-decoration: none"> Đăng kí </a>
 							</h6>
 						</div>
-					</div>  
+					</div>
 
 				</div>
 			</div>

@@ -9,12 +9,10 @@
     <welcome-file>default.jsp</welcome-file>
     <welcome-file>default.htm</welcome-file>
   </welcome-file-list>
-  
   <error-page>
-  	<error-code>404</error-code>
-  	<location>/error_page.jsp</location>
+    <error-code>404</error-code>
+    <location>/error_page.jsp</location>
   </error-page>
-  
   <servlet>
     <description></description>
     <display-name>ConnectionProvider</display-name>
@@ -174,5 +172,15 @@
   <servlet-mapping>
     <servlet-name>ChangePasswordServlet</servlet-name>
     <url-pattern>/ChangePasswordServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>VnpayPaymentReturn</display-name>
+    <servlet-name>VnpayPaymentReturn</servlet-name>
+    <servlet-class>com.eazydeals.servlets.VnpayPaymentReturn</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>VnpayPaymentReturn</servlet-name>
+    <url-pattern>/VnpayPaymentReturn</url-pattern>
   </servlet-mapping>
 </web-app>

@@ -1,16 +1,18 @@
 package com.eazydeals.servlets;
 
-import jakarta.servlet.ServletException;
-import jakarta.servlet.http.HttpServlet;
-import jakarta.servlet.http.HttpServletRequest;
-import jakarta.servlet.http.HttpServletResponse;
-import jakarta.servlet.http.HttpSession;
 import java.io.IOException;
+
 import com.eazydeals.dao.CartDao;
 import com.eazydeals.dao.ProductDao;
 import com.eazydeals.entities.Cart;
 import com.eazydeals.entities.Message;
 import com.eazydeals.helper.ConnectionProvider;
+
+import jakarta.servlet.ServletException;
+import jakarta.servlet.http.HttpServlet;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
+import jakarta.servlet.http.HttpSession;
 
 public class AddToCartServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;

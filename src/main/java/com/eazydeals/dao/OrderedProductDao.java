@@ -34,8 +34,8 @@ public class OrderedProductDao {
 		}
 	}
 
-	public List<OrderedProduct> getAllOrderedProduct(int oid) {
-		List<OrderedProduct> list = new ArrayList<OrderedProduct>();
+	public List<OrderedProduct> getAllOrderedProduEazyDealsct(int oid) {
+		List<OrderedProduct> list = new ArrayList<>();
 		try {
 			String query = "select * from ordered_product where orderid = ?";
 			PreparedStatement psmt = this.con.prepareStatement(query);

@@ -40,20 +40,25 @@ if (activeAdmin == null) {
 							<input type="hidden" name="operation" value="updateCategory">
 							<div class="mb-3">
 								<label class="form-label"><b>Tên danh mục</b></label> <input
-									type="text" name="category_name" value="<%=category.getCategoryName()%>" class="form-control" >
+									type="text" name="category_name"
+									value="<%=category.getCategoryName()%>" class="form-control">
 							</div>
 							<div class="mb-3">
-								<label class="form-label"><b>Hình ảnh</b></label><input class="form-control" type="file" name="category_img">
+								<label class="form-label"><b>Hình ảnh</b></label><input
+									class="form-control" type="file" name="category_img">
 							</div>
 							<div class="mb-3">
-								<label class="form-label"><b>Hình ảnh hiện tại:&nbsp;</b></label><%=category.getCategoryImage()%>&emsp;<img
-									src="Product_imgs\<%=category.getCategoryImage()%>"
-									style="width: 80px; height: 80px; width: auto;">
-								<input type="hidden" name="image" value="<%=category.getCategoryImage()%>">
+								<label class="form-label"><b>Hình ảnh hiện
+										tại:&nbsp;</b></label><%=category.getCategoryImage()%>
+								&emsp;<img src="Product_imgs\<%=category.getCategoryImage()%>"
+									style="width: 80px; height: 80px; width: auto;"> <input
+									type="hidden" name="image"
+									value="<%=category.getCategoryImage()%>">
 							</div>
 						</div>
 						<div class="card-footer text-center">
-							<button type="submit" class="btn btn-lg btn-primary me-3">Cập nhật</button>
+							<button type="submit" class="btn btn-lg btn-primary me-3">Cập
+								nhật</button>
 						</div>
 					</form>
 				</div>
